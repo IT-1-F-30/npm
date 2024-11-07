@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <head>
+      <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+      <script type="modele" src="https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision/vision_bundle.js"crossorigin="anonymous"></script>
+    </head>
+
+    <title>Mediapipe Handpose Example</title>
+
+    <!-- The website JavaScript file -->
+    <script type="module" src="./main.js" defer></script>
+  </head>
+  <body>
+    <video id="input_video" style="display:none"></video>
+    <br><br><br><br>
+    <canvas id="output_canvas"></canvas>
+    <p id="wrist"></p>
+    <p id="hand"></p>
+    <p id="true"></p>
+    <button id="startButton">Start</button>
+    <button id="stopButton">Stop</button>
+    <video id="video" autoplay></video>
+    <canvas id="canvas"></canvas>
+  </body>
+</html>
